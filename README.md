@@ -25,3 +25,5 @@ On Linux, run:
 ```
 nodemon main.py
 ```
+
+On Windows, double click `dev.cmd`
