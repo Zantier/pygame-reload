@@ -19,6 +19,11 @@ Install nodemon:
 npm i -g nodemon
 ```
 
+Open a terminal in a directory to copy this project to, and run git clone:
+```
+git clone https://github.com/Zantier/pygame-reload
+```
+
 ### Run
 
 On Linux, run:
