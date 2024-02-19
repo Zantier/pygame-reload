@@ -1,6 +1,7 @@
 # pygame-reload
 
-Reload pygame on code changes (Linux or Windows)
+Reload pygame on code changes (Linux or Windows). This project doesn't do much other than
+provide a template for pygame beginners!
 
 ### Install
 
