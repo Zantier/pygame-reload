@@ -14,7 +14,7 @@ CIRCLE_COLOR = (230, 180, 180)
 os.environ['SDL_VIDEO_WINDOW_POS'] = f'{WINDOW_LEFT},{WINDOW_TOP}'
 pygame.init()
 fps_clock = pygame.time.Clock()
-display_surface = pygame.display.set_mode((1200, 1200))
+display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
 
 def draw():
