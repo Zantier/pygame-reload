@@ -15,6 +15,7 @@ pygame.init()
 fps_clock = pygame.time.Clock()
 # The display surface
 surf = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+font = pygame.font.Font('freesansbold.ttf', 32)
 
 
 while True:
@@ -26,6 +27,9 @@ while True:
     surf.fill(BACKGROUND_COLOR)
     pygame.draw.circle(surf, 'red', (200, 100), 50)
     pygame.draw.circle(surf, 'blue', (300, 400), 130)
+
+    text = font.render('hello', True, 'black')
+    surf.blit(text, (0, 0))
 
     pygame.display.update()
     fps_clock.tick(FPS)
