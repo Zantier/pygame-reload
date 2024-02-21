@@ -17,11 +17,6 @@ fps_clock = pygame.time.Clock()
 display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
 
-def draw():
-    pygame.draw.circle(display_surface, CIRCLE_COLOR, (200, 100), 50)
-    pygame.draw.circle(display_surface, CIRCLE_COLOR, (300, 400), 130)
-
-
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:
@@ -29,6 +24,8 @@ while True:
             sys.exit()
 
     display_surface.fill(BACKGROUND_COLOR)
-    draw()
+    pygame.draw.circle(display_surface, CIRCLE_COLOR, (200, 100), 50)
+    pygame.draw.circle(display_surface, CIRCLE_COLOR, (300, 400), 130)
+
     pygame.display.update()
     fps_clock.tick(FPS)
