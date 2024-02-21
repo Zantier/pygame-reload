@@ -9,7 +9,6 @@ WINDOW_WIDTH = 600
 WINDOW_HEIGHT = 600
 FPS = 30
 BACKGROUND_COLOR = (200, 250, 230)
-CIRCLE_COLOR = (230, 180, 180)
 
 os.environ['SDL_VIDEO_WINDOW_POS'] = f'{WINDOW_LEFT},{WINDOW_TOP}'
 pygame.init()
@@ -25,8 +24,8 @@ while True:
             sys.exit()
 
     surf.fill(BACKGROUND_COLOR)
-    pygame.draw.circle(surf, CIRCLE_COLOR, (200, 100), 50)
-    pygame.draw.circle(surf, CIRCLE_COLOR, (300, 400), 130)
+    pygame.draw.circle(surf, 'red', (200, 100), 50)
+    pygame.draw.circle(surf, 'blue', (300, 400), 130)
 
     pygame.display.update()
     fps_clock.tick(FPS)
